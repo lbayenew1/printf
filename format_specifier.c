@@ -38,3 +38,15 @@ int print_percent(va_list list)
 	write_char('%');
 	return (1);
 }
+/**
+ * print_integer - print integer
+ * @list: list of argument
+ * Return: length of integer
+ */
+int print_integer(va_list list)
+{
+	int num_len;
+
+	num_len = print_number(list);
+	return (num_len);
+}
