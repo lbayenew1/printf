@@ -10,11 +10,13 @@
  * @op: operator
  * @f: point to function
  */
-typedef struct convert
+struct convert
 {
 	char *op;
 	int (*f)(va_list);
-} conv;
+};
+typedef struct convert conv;
+int parser(const char *format, conv f_list[], va_list arg_list);
 int write_char(char c);
 int print_char(va_list);
 int print_percent(va_list);
