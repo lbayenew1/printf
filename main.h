@@ -17,7 +17,7 @@ struct convert
 };
 typedef struct convert conv;
 int parser(const char *format, conv f_list[], va_list arg_list);
-int write_char(char c);
+int write_char(char);
 int print_char(va_list);
 int print_percent(va_list);
 int print_string(va_list);

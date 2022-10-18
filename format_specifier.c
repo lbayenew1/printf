@@ -7,7 +7,7 @@
  */
 int print_char(va_list list)
 {
-	write_char(va_arg(list, int);
+	write_char(va_arg(list, int));
 	return (1);
 }
 /**

@@ -14,9 +14,9 @@ int parser(const char *format, conv f_list[], va_list arg_list)
 	printed_chars = 0;
 	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (format[i] == '%';)
+		if (format[i] == '%')
 		{
-			for (j = 0; f_list[j].op != '\0'; j++)
+			for (j = 0; f_list[j].op != NULL; j++)
 			{
 				if (format[i + 1] == f_list[j].op[0])
 				{
